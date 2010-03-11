@@ -1,0 +1,7 @@
+	{% for tweet in tweets %}
+			<blockquote class="example-twitter"> 
+			<p>{{tweet.text}}</p> 
+			</blockquote> 
+			<p><img src="http://img.tweetimag.es/i/{{tweet.user.name.lower}}_m" alt="{{tweet.user.name}}" height="24" width="24" /> <a href="/person/{{tweet.user.uid}}">{{tweet.user.name}}</a> said this {{tweet.created_at|timesince}} ago</p> 
+
+	{% endfor %}

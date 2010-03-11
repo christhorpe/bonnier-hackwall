@@ -1,0 +1,34 @@
+{% extends "../ui/twocolumn.html" %}
+
+{% block sidebar %}
+	{% include "tweeterlist.html" %}
+{% endblock %}
+
+{% block maincolumn %}
+	<h3 class="sectionhead"><img src="http://img.tweetimag.es/i/{{user.name.lower}}_b" alt="{{user.name}}" height="73" width="73" /> {{user.name}} <span class="count">{{user.tweetcount}}</span></h3>
+	{% for item in details %}
+		{% ifequal item.class "fn"%}
+			<div><strong>Name</strong>:{{item.content}}</div>
+		{% endifequal %}
+		{% ifequal item.class "bio"%}
+			<div><strong>Bio</strong>: {{item.content}}</div>
+		{% endifequal %}
+		{% ifequal item.class "adr"%}
+			<div><strong>Location</strong>: {{item.content}}</div>
+		{% endifequal %}
+		{% ifequal item.class "stats_count numeric "%}
+			<div>{{item.content}} {{item.class}}</div>
+		{% endifequal %}
+		{% ifequal item.class "stat_count"%}
+			<div><strong>Tweets</strong>: {{item.content}}</div>
+		{% endifequal %}
+	{% endfor %}
+	<div>
+		{% for tweet in tweets %}
+			<blockquote class="example-twitter"> 
+			<p>{{tweet.text}}</p> 
+			</blockquote> 
+			<p>Sent {{tweet.created_at|timesince}} ago</p> 
+		{% endfor %}
+	</div>
+{% endblock %}

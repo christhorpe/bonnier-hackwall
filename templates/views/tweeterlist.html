@@ -1,0 +1,6 @@
+<h3 class="sectionhead">Tweeters</h3>
+{% for user in users %}
+<div class="list">
+	<img src="http://img.tweetimag.es/i/{{user.name.lower}}_m" alt="{{user.name}}" height="24" width="24" /> <a href="/person/{{user.uid}}">{{user.name}}</a> <span class="count">{{user.tweetcount}}</span>
+</div>
+{% endfor %}

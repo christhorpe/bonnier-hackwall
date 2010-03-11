@@ -1,0 +1,5 @@
+cron:
+- description: initiate feed pull
+  url: /scrape/feed
+  schedule: every 1 minutes
+

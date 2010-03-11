@@ -1,0 +1,125 @@
+body {
+	background-color: #eee;
+	color: #000;
+}
+
+img {
+	border: 0px;
+}
+
+p {
+	font-size: 80%;
+}
+
+a {
+	background-color: #eee;
+	padding: 5px;
+	color: #000;
+	font-family: "Helvetica Neue", "Helvetica", "Arial", Sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover {
+	background-color: #ccc;
+	color: #333;
+}
+
+span.searchitem {
+	padding: 5px;
+	background-color: #eee;
+	color: #333;
+	font-family: "Helvetica Neue", "Helvetica", "Arial", Sans-serif;
+	font-weight: bold;
+}
+
+#doc {
+	background-color: #ddd;
+	padding: 10px;
+}
+
+div.header {
+	border-bottom: 1px dotted #333;
+	margin-bottom: 15px;
+}
+
+div.navbar {
+	border-top: 1px dotted #999;
+	padding-top: 7px;
+	padding-bottom: 5px;
+}
+
+div.footer {
+	font-family: "Helvetica Neue", "Helvetica", "Arial", Sans-serif;
+	border-top: 1px dotted #999;
+	margin-top: 15px;
+}
+
+div.logobar {
+	background-color: #e3e3e3;
+	height: 100px;
+}
+
+span.headertext {
+	vertical-align: top;
+	font-family: "Helvetica Neue", "Helvetica", "Arial", Sans-serif;
+	color: #666;
+	font-size: 170%;
+	font-weight: bold;
+	letter-spacing: -1.6px;
+	padding-left: 25px;	
+}
+
+span.count {
+	font-family: "Helvetica Neue", "Helvetica", "Arial", Sans-serif;
+	font-size: 60%;
+	background-color: #666;
+	color: #fff;
+	padding: 3px;
+	border: 1px solid #000;
+}
+
+div.list {
+	padding-bottom: 5px;
+	border-bottom: 1px solid #fff;
+	margin-bottom: 5px;
+}
+
+
+h2 {
+	color: #444;
+	font-size: 140%;
+	letter-spacing: -1.4px;
+	border-bottom: 1px dotted #ddd;
+	margin-bottom: 15px;
+}
+
+h3.sectionhead {
+	color: #666;
+	font-family: "Helvetica Neue", "Helvetica", "Arial", Sans-serif;
+	font-weight: bold;
+	font-size: 130%;
+	letter-spacing: -1.1px;
+	margin-bottom: 10px;
+}
+
+h4.sectionhead {
+	color: #777;
+	font-family: "Helvetica Neue", "Helvetica", "Arial", Sans-serif;
+	font-weight: bold;
+	font-size: 120%;
+	letter-spacing: -1px;
+	margin-bottom: 10px;
+}
+
+h5 {
+	color: #888;
+	font-size: 100%;
+	letter-spacing: -0.7px;
+	margin-bottom: 10px;
+}
+
+div.yui-t7 {
+	background-color: #fff;
+}
+

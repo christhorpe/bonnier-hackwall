@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+ "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>Bonnier Hackday Tweets</title>
+	<link rel="stylesheet" href="/static/styles/yui.css" type="text/css">
+	<link rel="stylesheet" href="/static/styles/web.css" type="text/css">
+	<link rel="stylesheet" href="/static/styles/bubbles.css" type="text/css">
+	<script type="text/javascript" src="/static/js/jquery-1.3.min.js"></script>
+</head>
+<body>
+	<div id="doc" class="yui-t1">
+		<div id="hd" role="banner" class="header">
+			<div class="logobar"><img src="/static/images/bonnierhack.png"><span class="headertext">Some nice people at Bonnier Hackday said these things...</span></div>
+			<form method="GET" action="/search">
+			<div class="navbar"><span class="navitem"><a href="/">home</a></span> <span class="navitem"><a href="/live">live</a></span> <span class="searchitem">search <input type="text" name="q" /> <input type="submit" value="search" /></span></div>
+			</form>
+		</div>
+   		<div id="bd" role="main">
+			{% block contentpanel %}
+			{% endblock %}
+		</div>
+   		<div id="ft" role="contentinfo" class="footer"><p>Built by <a href="http://twitter.com/jaggeree">@jaggeree</a> in an evening for <a href="http://www.bonnier.se/sv/content/bonnier-hack-day" target="_new">Bonnier Hackday</a> with <a href="http://developer.yahoo.com/yql/" target="_new">YQL</a>, <a href="http://developer.yahoo.com/yui/grids/builder/" target="_new">YUI Grids</a>, <a href="http://code.google.com/appengine/" target="_new">Google AppEngine</a>, the <a href="http://apiwiki.twitter.com/Twitter-Search-API-Method:-search" target="_new">Twitter Search API</a>, some lovely Twitter avatar images from <a href="http://tweetimag.es/" target="_new">tweetimag.es</a> and the fabulous <a href="http://nicolasgallagher.com/demo/pure-css-speech-bubbles/bubbles.html" target="_new">Pure CSS bubbles</a> from <a href="http://twitter.com/necolas" target="_new">Nicholas Gallagher</a></p></div>
+	</div>
+</body>
+</html>

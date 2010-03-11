@@ -1,0 +1,22 @@
+{% extends "../ui/onecolumn.html" %}
+
+{% block maincolumn %}
+		<script type="text/javascript">
+		<!--
+		function timedRefresh(timeoutPeriod) {
+			setInterval(refreshStream,timeoutPeriod);
+		}
+		
+		function refreshStream() {
+			$('#refreshable').load("/live/panel");
+		}
+
+		refreshStream();
+		timedRefresh(30000);
+		//   -->
+	</script>
+	<h3 class="sectionhead">Live tweets, refreshed every 30 seconds</h3>
+	<div id="refreshable">
+		{% include "panel.html"%}
+	</div>
+{% endblock %}

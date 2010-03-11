@@ -1,0 +1,15 @@
+{% extends "../ui/onecolumn.html" %}
+
+{% block maincolumn %}
+	<h3 class="sectionhead">You searched for... "{{searchterm}}"</h3>
+	{% if tweets %}
+		{% for tweet in tweets %}
+			<blockquote class="example-twitter" cite="http://twitter.com/necolas/status/9880187933"> 
+			<p>{{tweet.text}}</p> 
+			</blockquote> 
+			<p><img src="http://img.tweetimag.es/i/{{tweet.user.name.lower}}_m" alt="{{tweet.user.name}}" height="24" width="24" /> <a href="/person/{{tweet.user.uid}}">{{tweet.user.name}}</a> said this {{tweet.created_at|timesince}} ago</p> 
+		{% endfor %}
+	{% else %}
+		<div>Oh boo. No one has talked about "{{searchterm}}" yet at Bonnier Hackday.</div>
+	{% endif %}
+{% endblock %}

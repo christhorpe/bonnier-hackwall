@@ -1,0 +1,17 @@
+application: bonnier-hackwall
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /static/styles
+  static_dir: static/styles
+
+- url: /static/images
+  static_dir: static/images
+
+- url: /static/js
+  static_dir: static/js
+  
+- url: .*
+  script: main.py
